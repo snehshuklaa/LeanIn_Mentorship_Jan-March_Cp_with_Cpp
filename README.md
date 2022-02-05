@@ -1,1 +1,1 @@
-# LeanIn_Mentorship_Jan-March_Cp_with_Cpp
+This repository contains the top interview questions that range from arrays, strings, linked lists, trees, etc. I have made this repository under the mentorship program of Lean In Banasthali, Competitive Programming in C++.
