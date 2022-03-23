@@ -1,0 +1,19 @@
+class Solution {
+public:
+    bool isSymmetric(TreeNode* root) {
+        return tree(root, root);
+    }
+    
+    bool tree(TreeNode* root, TreeNode* sym)
+    {
+        if (!root && !sym)
+            return true;
+        if (!root || !sym)
+            return false;
+        if (root->val != sym->val)
+            return false;
+        return tree(root->left, sym->right) && tree(root->right, sym->left);
+ 
+        
+    }
+};
