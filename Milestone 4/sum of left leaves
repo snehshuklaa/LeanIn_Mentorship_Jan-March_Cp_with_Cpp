@@ -1,0 +1,21 @@
+class Solution {
+public:
+    
+         int help(TreeNode* root,bool flag){
+
+        if(root==NULL){
+            return 0;
+        }
+        int sum=0;
+        if(root->left==NULL&&root->right==NULL&&flag){
+            sum=sum+root->val;
+        }
+        int lsum=help(root->left,true);
+        int rsum=help(root->right,false);
+        return sum+lsum+rsum;
+    }
+    int sumOfLeftLeaves(TreeNode* root) {
+        return help(root,false); 
+    }
+    
+};
